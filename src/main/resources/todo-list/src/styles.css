@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'helveticaNeue';
+  src: url(./assets/font/HelveticaNeue-HeavyCond.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'bebasNeue';
+  src: url(./assets/font/BebasNeue-Regular.otf) format("opentype");
+}
+
+
+@font-face {
+  font-family: 'signatra';
+  src: url(./assets/font/Signatra.otf) format("opentype");
+}
+
+body {
+  margin: 0;
+    overflow-x: hidden;
+  /* background-color: #FFEB3B; */
+}
+
+.title {
+  font-family: 'helveticaNeue';
+  color: #444;
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+
+div.container {
+  width: 100%;
+  height: 100%;
+  padding-top: 1em;
+}
+
+div.inner-container {
+  margin: 0 2em;
+}
+
+div.centering-container {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+div.logo-container {
+  height: 100px;
+  margin-top: 3em;
+}
+
+div.logo-container img {
+  height: 100%;
+}
+

@@ -1,0 +1,53 @@
+div.todo {
+  border: solid 2px #333;
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+div.todo p {
+  margin: 0;
+}
+
+div.todo p button {
+  float: right;
+}
+
+div.todo p.todo-id {
+  border-bottom: solid 2px #333;
+  padding: 0.8em;
+}
+
+div.todo p.message {
+  padding: 1.5em 0.8em;
+}
+
+div.todo p.todo-id.red {
+  background-color: #f5492ae7;
+}
+
+div.todo p.todo-id.orange {
+  background-color: #f5962ae7;
+}
+
+div.todo p.todo-id.yellow {
+  background-color: rgb(255, 212, 70);
+}
+
+div.todo p.todo-id.green {
+  background-color: rgb(121, 212, 78);
+}
+
+div.todo p.todo-id.blue {
+  background-color: rgb(78, 147, 212);
+}
+
+div.todo p.todo-id.indigo {
+  background-color: rgb(78, 103, 212);
+}
+div.todo p.todo-id.violet {
+  background-color: rgb(147, 78, 212);
+}

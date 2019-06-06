@@ -1,0 +1,39 @@
+p.todo-instructions, p.todo-success, p.todo-failure {
+  font-size: 1.5em;
+  font-family: 'Arial';
+}
+
+p.todo-success {
+  color: rgb(157, 241, 78);
+  transition: opacity 1s ease-out;
+}
+
+p.todo-failure {
+  color: rgb(255, 64, 30)
+}
+
+form#todo-message>textarea {
+  width: 600px;
+  height: 200px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.7em;
+}
+
+form#todo-message {
+  display: inline-block;
+}
+
+form#todo-message button {
+  width: 100%;
+  height: 50px;
+  font-size: 1.2em;
+}
+
+div.message-status {
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
+}
+
+div.message-status.showMessage {
+  opacity: 1;
+}

@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="inner-container">
+    <div class="centering-container">
+      <h1 class="title">Show Todo</h1>
+        <div *ngFor="let todo of todos; index as i">
+          <div class="todo">
+            <p [class]="'todo-id ' + colors[i % colors.length]">#{{ i + 1 }}
+              <button (click)="deleteToDo(todo.id)">Delete</button>
+              <button (click)="showSideBar(todo, i)">Update</button></p>
+          <p class="message">{{ todo.content }} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-update-window [sidebar]="sidebar" (hideEmitter)="hideSideBar()" [todo]="todosidebar" [colorId]="colorId">
+</app-update-window>

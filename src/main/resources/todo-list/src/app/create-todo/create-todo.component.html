@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="inner-container">
+      <div class="centering-container">
+        <h1 class="title">Create Todo</h1>
+        <p class="todo-instructions">Enter your message here:</p>
+        <form id="todo-message" [formGroup]="createTodoForm"  (ngSubmit)="onSubmit(createTodoForm.value)" (keydown)='onReturnKeyPressed($event)'>
+          <textarea type="text" required formControlName="content"></textarea>
+          <p><button type="submit">Post</button></p>
+        </form>
+        <div [class]='(showMessage ? "showMessage" : "") + " message-status"'>
+          <p *ngIf="this.todoCreateStatus === this.tds.SUCCESS; else errorMessage" class='todo-success'>Post successful!</p>
+          <ng-template #errorMessage><p  class='todo-failure'>Error: {{ this.errorDescription }}</p></ng-template>
+        </div>
+      </div>
+  </div>
+</div>
