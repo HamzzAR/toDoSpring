@@ -16,7 +16,7 @@ We implemented a simple todo CRUD. We were given a week to learn and deploy our 
 1) git clone https://github.com/HamzzAR/toDoSpring (or download .zip)
 2) Start your MySQL service
 3) Navigate to the directory src/main/resources/todo-list
-4) Run ```npm install```
+4) Run ```npm install @angular/cli```
 5) Run ```ng serve```
 6) Return to the root directory of the project
 7) Run ```mvn install```
