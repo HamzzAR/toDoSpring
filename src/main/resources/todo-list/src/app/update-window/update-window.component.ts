@@ -31,10 +31,12 @@ export class UpdateWindowComponent implements OnInit {
     this.hideEmitter.emit();
   }
 
-  onReturnKeyPressed(event: KeyboardEvent, contentToChange: string) {
+  onKeyPressed(event: KeyboardEvent, contentToChange: string) {
     if (event.keyCode === 13) {
       this.updateTodo(contentToChange);
       return false;
+    } else if (event.keyCode === 27) {
+      this.hideSideBar();
     }
   }
 

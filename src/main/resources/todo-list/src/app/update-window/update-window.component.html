@@ -1,7 +1,7 @@
 <div [class]="sidebar + ' ' + colors[colorId] + ' update-window'">
   <h3>Edit Content</h3>
   <div id="text-input">
-    <textarea [value]="todo.content" #content (keydown)='onReturnKeyPressed($event, content.value)'></textarea>
+    <textarea [value]="todo.content" #content (keydown)='onKeyPressed($event, content.value)'></textarea>
     <div id="buttons">
       <button id="submit-button" (click)="updateTodo(content.value)">
         Submit
